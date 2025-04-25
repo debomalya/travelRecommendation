@@ -1,0 +1,462 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+/* Navbar Styling */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 0.3rem 1rem;
+    display: flex;
+    justify-content: center; /* Center all elements horizontally */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Add subtle shadow for depth */
+}
+  
+.nav-logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+  
+.nav-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+  
+.aeroplane-icon {
+    width: 24px; /* Slightly larger for better visibility */
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+  
+#name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.5px; /* Add slight letter spacing for better readability */
+}
+  
+/* Navbar Styling */
+.nav-center {
+    display: flex;
+    justify-content: center; /* Center the elements horizontally */
+    align-items: center; /* Center the elements vertically */
+    flex: 1;
+    text-align: center; /* Ensure text is centered */
+}
+  
+.nav-center a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px; /* Increased spacing between links */
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s;
+    font-weight: 500; /* Medium weight for better visibility */
+}
+  
+.nav-center a:hover {
+    background-color: rgba(255,255,255,0.1); /* Subtle highlight on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+  
+.nav-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    justify-content: flex-end;
+}
+  
+.nav-search input {
+    padding: 8px 12px;
+    border-radius: 20px; /* Rounded search input */
+    border: none;
+    width: 180px;
+    font-size: 0.9rem;
+}
+  
+.nav-search button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 20px; /* Rounded buttons to match input */
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+  
+.nav-search button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+  
+/* Logo Styling */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+  
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background 0.3s;
+}
+  
+.nav-links li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+  
+/* Search Bar Styling */
+.search-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+  
+.search-container input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  
+.search-container button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.search-container button:hover {
+    background-color: #0056b3;
+}
+  
+/* Main Section Styling */
+main {
+    padding: 2rem;
+}
+  
+/* Contact Form Styling */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin-top: 1rem;
+}
+  
+.contact input,
+.contact textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.contact button {
+    padding: 0.75rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.contact button:hover {
+    background-color: #218838;
+}
+  
+/* Recommendation Results */
+#results {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 3vw;
+    transform: translateY(-50%);
+    width: 340px;
+    max-height: 80vh;
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    background: rgba(255,255,255,0.92);
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+    padding: 1.5rem 1rem;
+    z-index: 10;
+}
+
+.card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card .visit-btn {
+    margin-top: 0.75rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.card .visit-btn:hover {
+    background-color: #0056b3;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 0.5rem 0 0.25rem;
+    text-align: center;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+}
+  
+/* Social Icons Styling */
+.social-icons {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 0.5rem;
+}
+  
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+  
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #007BFF;
+}
+
+/* Add this at the end or after General Styling */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.home-bg {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%; /* Changed from 100vw to 100% */
+}
+
+.hero-section {
+    position: relative;
+    width: 100%; /* Changed from 100vw to 100% */
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 6vw;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact h1,
+.contact p {
+    color: #fff;
+    font-weight: bold;
+}
+
+.company-info {
+    color: #fff;
+    font-weight: bold;
+}
+
+h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact label {
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero-content h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0 0 2rem 0;
+    text-align: left;
+    max-width: 500px;
+}
+
+.book-btn {
+    align-self: flex-start;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 14px 36px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    margin-top: 0.5rem;
+}
+
+.book-btn:hover {
+    background-color: #00796b;
+}
+  
+.hero-overlay {
+    background: rgba(0, 64, 72, 0.55); /* semi-transparent dark overlay */
+    padding: 60px 40px 40px 40px;
+    margin: 60px 0 0 60px;
+    border-radius: 8px;
+    max-width: 480px;
+    color: #fff;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+  
+.hero-main {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.05;
+    display: block;
+}
+  
+.hero-desc {
+    margin: 30px 0 30px 0;
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.5;
+}
+  
+.book-btn {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 14px 36px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+  
+.book-btn:hover {
+    background-color: #00796b;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.team-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.team-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.16);
+}
+
+.team-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #007BFF;
+}
+
+.team-card h3 {
+    margin: 0.5rem 0 0.25rem;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.team-card p {
+    color: #555;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+}

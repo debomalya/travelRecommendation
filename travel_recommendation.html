@@ -1,0 +1,50 @@
+<!-- travel_recommendation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Destinations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-bg">
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-logo">
+      <a href="travel_recommendation.html"><img src="aeroplane-icon.png" alt="Aeroplane Icon" class="aeroplane-icon"><span id="name">TravelBuddy</span></a>
+    </div>
+    <div class="nav-center">
+      <a href="travel_recommendation.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="nav-search">
+      <input type="text" id="search" placeholder="Search Destinations">
+      <button onclick="handleSearch()">Search</button>
+      <button onclick="clearResults()">Clear</button>
+    </div>
+  </header>
+
+  <!-- Social Icons -->
+  <div class="social-icons">
+    <a href="#" title="Facebook"><img src="facebook-icon.png" alt="Facebook" width="28" height="28"></a>
+    <a href="#" title="Twitter"><img src="twitter-icon.png" alt="Twitter" width="28" height="28"></a>
+    <a href="#" title="Instagram"><img src="instagram-icon.png" alt="Instagram" width="28" height="28"></a>
+    <a href="#" title="Youtube"><img src="youtube-icon.png" alt="Instagram" width="28" height="28"></a>
+  </div>
+
+  <!-- Home Page Content -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Discover Your Next Adventure</h1>
+      <p>Explore destinations around the globe and embrace new cultures.</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </section>
+
+  <!-- Recommendation Results -->
+  <div id="results"></div>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
